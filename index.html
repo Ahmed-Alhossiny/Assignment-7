@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's For Dinner</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+</head>
+
+<body>
+    <!-- NavBar Section -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <div class="icon-wrapper rounded-circle me-3">
+                    <i class="fa-solid fa-utensils text-white"></i>
+                </div>
+                <div class="logo">
+                    <p class="mb-0">What's For Dinner</p>
+                    <span class="">Your daily meal inspiration</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <div class="nav-r d-flex align-items-center justify-content-between w-25">
+                    <i class="fa-solid fa-bookmark fa-xl"></i>
+                    <i class="fa-solid fa-clock-rotate-left fa-xl"></i>
+                    <i class="fa-solid fa-gear fa-xl"></i>
+                    <div class="nav-img">
+                        <div class="img-wrapper rounded-circle">
+                            <img src="imgs/avatar.jpg" alt="avatar" class="w-100 rounded-circle">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Body -->
+    <main>
+        <div class="container d-flex justify-content-center align-items-center outer-border mb-5">
+            <div class="content rounded-4 bg-white col-12 row">
+                <div id="MealImg" class="content-img col-12 col-lg-5 position-relative p-0">
+                    <div id="ImgWrapper">
+
+                    </div>
+                    <div
+                        class="rating position-absolute d-flex justify-content-between align-items-center bg-white py-2 px-3 rounded-5">
+                        <i class="fa-solid fa-star"></i>
+                        <span id="MealRating" class="mx-2"></span>
+                        <span id="MealReviews"></span>
+                    </div>
+                    <div
+                        class="details d-flex justify-content-between text-center position-absolute rounded-4 py-4 px-4">
+                        <div class="prep col-4">
+                            <i class="fa-solid fa-clock fa-xl"></i>
+                            <p>Prep Time</p>
+                            <span id="PrepTime"></span>
+                        </div>
+                        <div class="cook col-4">
+                            <i class="fa-solid fa-fire-burner fa-xl"></i>
+                            <p>Cook Time</p>
+                            <span id="CookTime"></span>
+                        </div>
+                        <div class="servings col-4">
+                            <i class="fa-solid fa-users fa-xl"></i>
+                            <p>Servings</p>
+                            <span id="serving"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-data col-12 col-lg-7 position-relative p-5">
+                    <div class="deco d-flex">
+                        <div class="difficulty py-1 px-3 text-center rounded-5">
+                            <span id="MealDifficulty"></span>
+                        </div>
+                        <div class="country py-1 px-3 text-center rounded-5 ms-3">
+                            <span id="MealCountry"></span>
+                        </div>
+                    </div>
+                    <div class="name-n-icons d-flex justify-content-between">
+                        <div class="name-desc my-3">
+                            <h1 id="MealName"></h1>
+                            <p id="MealDesc"></p>
+                        </div>
+                        <div class="icons d-flex justify-content-end align-items-start">
+                            <div class="b-mark p-3 rounded-4">
+                                <i class="fa-solid fa-bookmark"></i>
+                            </div>
+                            <div class="s-nodes p-3 ms-3 rounded-4">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs px-3" id="myTab" role="tablist">
+                        <li class="nav-item w-25" role="presentation">
+                            <button class="nav-link active w-100" id="ingredients-tab" data-bs-toggle="tab"
+                                data-bs-target="#ingredients-tab-pane" type="button" role="tab"
+                                aria-controls="ingredients-tab-pane" aria-selected="true"><i
+                                    class="fa-solid fa-list-check"></i> Ingredients</button>
+                        </li>
+                        <li class="nav-item w-25" role="presentation">
+                            <button class="nav-link w-100" id="instructions-tab" data-bs-toggle="tab"
+                                data-bs-target="#instructions-tab-pane" type="button" role="tab"
+                                aria-controls="instructions-tab-pane" aria-selected="false"><i
+                                    class="fa-solid fa-book-open"></i> Instructions</button>
+                        </li>
+                        <li class="nav-item w-25" role="presentation">
+                            <button class="nav-link w-100" id="nutrition-tab" data-bs-toggle="tab"
+                                data-bs-target="#nutrition-tab-pane" type="button" role="tab"
+                                aria-controls="nutrition-tab-pane" aria-selected="false"><i
+                                    class="fa-solid fa-chart-pie"></i> Nutrition</button>
+                        </li>
+                        <li class="nav-item w-25" role="presentation">
+                            <button class="nav-link w-100" id="tips-tab" data-bs-toggle="tab"
+                                data-bs-target="#tips-tab-pane" type="button" role="tab" aria-controls="tips-tab-pane"
+                                aria-selected="false"><i class="fa-solid fa-lightbulb"></i> Chef's Tips</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active pb-5 border-bottom" id="ingredients-tab-pane"
+                            role="tabpanel" aria-labelledby="ingredients-tab" tabindex="0">
+                            <div id="MealIngredients" class="ingredients-box rounded-4 p-4 mt-4">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade pb-5 border-bottom" id="instructions-tab-pane" role="tabpanel"
+                            aria-labelledby="instructions-tab" tabindex="0">
+                            <div id="MealInstructions" class="instructions-box rounded-4 p-4 mt-3">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nutrition-tab-pane" role="tabpanel"
+                            aria-labelledby="nutrition-tab" tabindex="0">
+                            <div id="MealNutrition" class="sides-box d-flex">
+                                <div class="l-side col-6 pe-2">
+                                    <div
+                                        class="cal d-flex justify-content-between align-items-baseline common-bg p-3 my-3 rounded-4">
+                                        <div class="cal-l d-flex align-items-center">
+                                            <div class="cal-icon p-2 rounded-3 me-2">
+                                                <i class="fa-solid fa-fire"></i>
+                                            </div>
+                                            <span>Calories</span>
+                                        </div>
+                                        <p id="calories"></p>
+                                    </div>
+                                    <div
+                                        class="carb d-flex justify-content-between align-items-baseline common-bg p-3 mb-3 rounded-4">
+                                        <div class="carb-l d-flex align-items-center">
+                                            <div class="carb-icon p-2 rounded-3 me-2">
+                                                <i class="fa-solid fa-wheat-awn"></i>
+                                            </div>
+                                            <span>Carbohydrates</span>
+                                        </div>
+                                        <p id="carbs"></p>
+                                    </div>
+                                    <div
+                                        class="fiber d-flex justify-content-between align-items-baseline common-bg p-3 mb-3 rounded-4">
+                                        <div class="fiber-l d-flex align-items-center">
+                                            <div class="fiber-icon p-2 rounded-3 me-2">
+                                                <i class="fa-solid fa-seedling"></i>
+                                            </div>
+                                            <span>Fiber</span>
+                                        </div>
+                                        <p id="fibers"></p>
+                                    </div>
+                                </div>
+                                <div class="r-side col-6 ps-2">
+                                    <div
+                                        class="protein d-flex justify-content-between align-items-baseline common-bg p-3 my-3 rounded-4">
+                                        <div class="protein-l d-flex align-items-center">
+                                            <div class="protein-icon p-2 rounded-3 me-2">
+                                                <i class="fa-solid fa-dumbbell"></i>
+                                            </div>
+                                            <span>Protein</span>
+                                        </div>
+                                        <p id="protein"></p>
+                                    </div>
+                                    <div
+                                        class="fat d-flex justify-content-between align-items-baseline common-bg p-3 mb-3 rounded-4">
+                                        <div class="fat-l d-flex align-items-center">
+                                            <div class="fat-icon p-2 rounded-3 me-2">
+                                                <i class="fa-solid fa-droplet"></i>
+                                            </div>
+                                            <span>Fat</span>
+                                        </div>
+                                        <p id="fats"></p>
+                                    </div>
+                                    <div
+                                        class="sodium d-flex justify-content-between align-items-baseline common-bg p-3 mb-3 rounded-4">
+                                        <div class="sodium-l d-flex align-items-center">
+                                            <div class="sodium-icon p-2 rounded-3 me-2">
+                                                <i class="fa-solid fa-cube"></i>
+                                            </div>
+                                            <span></span>
+                                        </div>
+                                        <p id="sodium"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tips-tab-pane" role="tabpanel" aria-labelledby="tips-tab"
+                            tabindex="0">
+                            <div id="MealTips" class="tips-box rounded-4 p-3 mt-3">
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="TryAnother()" type="button"
+                        class="try mt-4 border-0 py-3 px-4 rounded-4 text-white"><i
+                            class="fa-solid fa-arrows-rotate me-1"></i> Try
+                        Another
+                        Recipe</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
