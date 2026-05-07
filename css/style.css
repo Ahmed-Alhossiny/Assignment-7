@@ -1,0 +1,308 @@
+/* General Tags */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fffbea;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Sections Style */
+
+/* NavBar Section */
+.navbar {
+    border-bottom: 3px solid rgba(128, 128, 128, 0.23);
+}
+
+.nav-img {
+    cursor: pointer;
+    width: 20%;
+}
+
+.nav-img .img-wrapper {
+    border: 3px solid #ffb86a;
+}
+
+.nav-r i {
+    cursor: pointer;
+    color: #4a5565;
+}
+
+.nav-r i:hover {
+    color: #f54900;
+}
+
+.logo p {
+    color: #101828;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #6a7282;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.icon-wrapper {
+    padding-block: 10px;
+    padding-inline: 12px;
+    background-color: #ff520e;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Main Body Section */
+main {
+    padding-top: 120px;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: 15px;
+    border: none;
+    color: #6a7282;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.nav-tabs .nav-link.active {
+    color: #f54900;
+    background-color: transparent;
+    border-bottom: 2px #f54900 solid;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #364153;
+}
+
+.main-img {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.rating {
+    top: 25px;
+    left: 25px;
+}
+
+.rating i {
+    color: #fdc700;
+}
+
+.rating span[class] {
+    color: #101828;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.rating span {
+    color: #6a7282;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.details {
+    width: 90%;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, rgba(245, 246, 242, 1) 0%, rgba(247, 247, 245, 1) 100%);
+}
+
+.details p {
+    color: #6a7282;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.details span {
+    color: #101828;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.details .fa-clock {
+    color: #ff6900;
+}
+
+.details .fa-fire-burner {
+    color: #fb2c36;
+}
+
+.details .fa-users {
+    color: #2b7fff;
+}
+
+.content-data {
+    border: 2px #ffedd4 solid;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.content-data .difficulty {
+    background-color: #dbfce7;
+    color: #2d9a5a;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+.content-data .country {
+    background-color: #dbeafe;
+    color: #436deb;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+.name-n-icons .name-desc h1 {
+    color: #101828;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.name-n-icons .name-desc p {
+    color: #4a5565;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.content {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 770px;
+}
+
+.ingredients-box,
+.instructions-box {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 350px;
+}
+
+.b-mark,
+.s-nodes {
+    width: fit-content;
+    background-color: #ffedd4;
+    color: #f54900;
+    cursor: pointer;
+}
+
+.b-mark:hover,
+.s-nodes:hover {
+    background-color: #ffd6a7;
+}
+
+.ingredients-box {
+    background-color: #fffaeb;
+}
+
+.number-wrapper {
+    height: fit-content;
+    background-color: #ff6900;
+}
+
+.ingredients-box p {
+    color: #364153;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.sides-box span {
+    color: #364153;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.sides-box p {
+    color: #101828;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.sides-box .cal .cal-icon {
+    background-color: #ffedd4;
+    height: fit-content;
+    color: #f54900;
+}
+
+.sides-box .carb .carb-icon {
+    background-color: #fef9c2;
+    height: fit-content;
+    color: #d08700;
+}
+
+.sides-box .fiber .fiber-icon {
+    background-color: #dbfce7;
+    height: fit-content;
+    color: #00a63e;
+}
+
+.sides-box .protein .protein-icon {
+    background-color: #dbeafe;
+    height: fit-content;
+    color: #155dfc;
+}
+
+.sides-box .fat .fat-icon {
+    background-color: #ffe2e2;
+    height: fit-content;
+    color: #e7000b;
+}
+
+.sides-box .sodium .sodium-icon {
+    background-color: #fce7f3;
+    height: fit-content;
+    color: #e60076;
+}
+
+.common-bg {
+    background-color: #f9fafb;
+}
+
+.tips-box .tip {
+    border-left: 4px #ffb900 solid;
+    background-color: #fffbeb;
+}
+
+.tips-box .tip i {
+    color: #e17100;
+}
+
+.try {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    background: linear-gradient(90deg, rgba(255, 104, 0, 1) 0%, rgba(251, 45, 54, 1) 100%);
+    transition: transform 0.1s linear;
+}
+
+.try:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, rgba(245, 73, 0, 1) 0%, rgba(231, 0, 9, 1) 100%);
+}
